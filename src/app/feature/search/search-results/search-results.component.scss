@@ -1,0 +1,14 @@
+.search-results {
+    display: grid;
+    margin: 0 auto;
+    padding: 24px;
+    
+    gap: 16px;
+    grid-template-columns: repeat(4, minmax(40px, 200px));
+    justify-content: center;
+    list-style: none;
+
+    &__result {
+        aspect-ratio: 1;
+    }
+}

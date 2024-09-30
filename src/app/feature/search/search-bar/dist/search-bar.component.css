@@ -1,0 +1,23 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.search-bar__input-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.search-bar__input {
+  box-sizing: border-box;
+  height: 28px;
+  flex-grow: 1;
+}
+.search-bar__spinner {
+  margin-left: 8px;
+  flex: 0 0 28px;
+  visibility: hidden;
+}
+.search-bar__spinner.visible {
+  visibility: initial;
+}

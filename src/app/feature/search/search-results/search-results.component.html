@@ -1,0 +1,7 @@
+<ul class="search-results">
+    <li 
+        class="search-results__result"
+        *ngFor="let result of results">
+        <app-search-item [name]="result.name" [url]="result.url"></app-search-item>
+    </li>
+</ul>

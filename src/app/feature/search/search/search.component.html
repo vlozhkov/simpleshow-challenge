@@ -1,0 +1,14 @@
+<div class="search">
+    <div class="search__keyword">
+        <app-search-bar
+          [(keyword)]="keyword"
+          [loading]="isLoading"
+          (keywordChange)="searchGif()"
+      ></app-search-bar>
+    </div>
+    <div class="search__results">
+        <app-search-results
+          [results]="gifs"
+        ></app-search-results>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="search-bar">
+    <label
+        for="keyword">Start searching for awesome GIFs!
+    </label>
+    <div class="search-bar__input-container">
+        <input
+            type="text"
+            class="search-bar__input"
+            [(ngModel)]="keyword"
+            (change)="setKeyword()"
+            name="keyword"
+            id=""keyword
+            placeholder="Enter your keyword" />
+        <div class="search-bar__spinner" [class.visible]="loading">
+            <app-spinner></app-spinner>
+        </div>
+    </div>
+</div>
